@@ -1,0 +1,447 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.color {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  width: 1440px;
+  font-family: "Inter", sans-serif;
+}
+section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1226px;
+  margin: auto;
+}
+.nav-1 {
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1226px;
+  margin: auto;
+  font-weight: bold;
+}
+.ul1 {
+  display: flex;
+  margin-right: -30px;
+  font-family: "Inter";
+}
+.ul1 li a {
+  display: flex;
+  padding: 30px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+li span {
+  color: #c91a1a;
+  text-decoration: none;
+  position: relative;
+}
+li span::after {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Position absolute to place it correctly */
+  left: 0; /* Start from the left */
+  right: 0; /* Stretch to the right */
+  bottom: -5px; /* Adjust this value to set the distance of the underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: #c91a1a; /* Color of the underline */
+}
+
+.container1 {
+  height: 576px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+  width: 50%;
+}
+
+.textbar1,
+.textbar2 {
+  height: 34rem;
+  margin-top: 80px;
+}
+.textbar1 p {
+  font-size: 25px;
+  color: #c91a1a;
+}
+.textbar1 h2 {
+  font-size: 70px;
+}
+.textbar1 h3 {
+  font-size: 30px;
+  margin-top: 25px;
+  color: white;
+}
+.textbar1 h2 {
+  color: #c91a1a;
+}
+.textbar1 h2 span {
+  color: #ffffff;
+}
+.textbar2 figure img {
+  height: 510px;
+  width: 520px;
+}
+.textbar2 {
+  margin-top: 50px;
+}
+
+.textbar1 button {
+  padding: 20px 50px;
+  border-radius: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 50px;
+  position: relative; /* Ensure the button is a positioned parent for the pseudo-element */
+  overflow: hidden; /* Hide overflow from the animated pseudo-element */
+}
+
+.btn1,
+.btn2 {
+  background-color: #c91a1a;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 1; /* Ensure the button is above the animated pseudo-element */
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn2 {
+  margin-left: 30px;
+  background-color: #000;
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Animation effect */
+.textbar1 button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 208, 208, 0.453);
+  border-radius: inherit;
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+.textbar1 button:hover::after {
+  animation: none; /* Stop the animation on hover */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+.container3 {
+  width: 100%;
+  margin-top: 40px;
+}
+.abt-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.right {
+  height: 200px;
+  width: 100%;
+  border: 1px solid rgba(136, 133, 133, 0.412);
+  background-color: rgba(30, 29, 29, 0.885);
+}
+.right p {
+  font-size: 16px;
+  text-align: center;
+  color: #c6c5c5;
+  line-height: 25px;
+  width: 553px;
+}
+.profilename {
+  width: 400px;
+  margin-top: -40px;
+}
+.profilename p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  padding: 15px;
+  color: #c6c5c5;
+}
+.profilename strong {
+  color: white;
+}
+.left figure img {
+  margin-left: -30px;
+}
+.container4 {
+  width: 100%;
+  height: 460px;
+  margin-top: 3px;
+}
+.skills {
+  margin-top: 20px;
+  width: 100%;
+  height: 358px;
+  background-color: #000000;
+  display: flex;
+}
+.skill1 {
+  width: 50%;
+  height: 100%;
+}
+.skill2 {
+  width: 50%;
+  height: 100%;
+  margin-left: 100px;
+}
+.skill1 h2 {
+  margin-bottom: 30px; /* Adds margin below the h3 element */
+}
+.skill-mf {
+  width: 80%;
+  color: #c6c5c5;
+  font-family: "Inter", sans-serif;
+}
+.skill2mf p {
+  font-size: 16px;
+}
+
+.title-s {
+  font-size: 16px;
+  color: #c6c5c5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+.skill-name {
+  display: inline-block;
+  width: 49%;
+  font-size: 18px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+.skill .pull-right {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+  font-size: 18px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.progress {
+  background-color: #f3f3f3;
+  height: 13px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: #ff0000; /* Red color for the progress bar */
+  height: 100%;
+}
+.skill2mf {
+  font-size: 18px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.skill2mf p strong {
+  color: white; /* White color for labels */
+}
+.skill2mf p {
+  margin-top: 28px;
+  color: gray;
+}
+.container5 {
+  width: 100%;
+  height: 200px;
+  margin-top: 3px;
+}
+
+.resumetext {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.resumetext p {
+  color: #c6c5c5;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  line-height: 1.5;
+}
+.container6 {
+  width: 100%;
+  height: 350px;
+  margin-top: 3px;
+}
+.contains {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.left1,
+.right1 {
+  margin-top: -20px;
+  height: 230px;
+  width: 48%;
+  border: 1px solid rgba(70, 67, 67, 0.575);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  background-color: #4445445f;
+}
+.date {
+  color: #fa0707;
+  font-size: 28px;
+  margin-left: 20px;
+}
+.left1.right1,
+.heading {
+  color: #ffffff;
+  font-size: 24px;
+  padding-top: 15px;
+  margin-left: 20px;
+}
+.rights,
+.lefts {
+  margin-top: 0px;
+}
+
+.left1 .right1,
+.position,
+.para {
+  color: #b1aaaa;
+  font-size: 16px;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+.container7 {
+  height: 850px;
+  width: 100%;
+  margin-top: 10px;
+}
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 40px; /* Adjust this value as needed for row and column gaps */
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  /* Adjust this value to add some padding around the content */
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1 {
+  margin-top: 20px; /* Adjust this value for the space between image and heading */
+  font-size: 24px; /* Adjust this value as needed */
+  color: white; /* Adjust this value as needed */
+  width: 100%;
+}
+.description {
+  margin-top: 10px; /* Adjust this value for the space between heading and description */
+  font-size: 16px; /* Adjust this value as needed */
+  color: rgb(188, 187, 187);
+  /* Adjust this value as needed */
+  width: 100%;
+  padding-right: 10px;
+  line-height: 1.5;
+}
+.container8 {
+  width: 100%;
+  height: 500px;
+  margin-top: 150px;
+}
+.contact {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: end;
+  margin-top: 40px;
+}
+
+.address,
+.email,
+.contacts,
+.resume {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.addresslogo,
+.emaillogo,
+.contactlogo,
+.resumelogo {
+  border: 2px soild rgb(134, 123, 123);
+  height: 100px;
+  width: 100px;
+  background-color: #2a2828;
+  border-radius: 50%;
+  margin-top: -60px;
+}
+.icons {
+  margin-left: 27px;
+  margin-top: 25px;
+}
+.addresslogo p {
+  text-align: end;
+}
